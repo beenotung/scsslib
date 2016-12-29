@@ -1,0 +1,35 @@
+{
+  "name": "scsslib",
+  "version": "1.0.0",
+  "description": "style library",
+  "keywords": [
+    "scss"
+  ],
+  "author": "Beeno Tung <aabbcc1241@yahoo.com.hk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beenotung/scsslib/issues"
+  },
+  "homepage": "https://github.com/beenotung/scsslib#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beenotung/scsslib.git"
+  },
+  "devDependencies": {
+    "node-sass": "^3.8.0",
+    "shx": "^0.1.4"
+  },
+  "dependencies": {},
+  "scripts": {
+    "--------------------------------install": "",
+    "--------------------------------dep": "",
+    "--------------------------------dep-hook": "",
+    "--------------------------------main": "",
+    "clean": "shx mkdir -p dist && rm -rf dist/*",
+    "build": "node-sass --include-path src src/common.scss dist/common.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "--------------------------------main-hook": "",
+    "prebuild": "npm run clean",
+    "--------------------------------": ""
+  }
+}
