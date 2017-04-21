@@ -2,8 +2,12 @@
   margin: auto
 }
 
-.text-center {
+[text-center] {
   text-align: center;
-  white-space: normal;
-  overflow: visible;
+  //white-space: normal;
+  //overflow: visible;
+}
+
+[no-text-transform] {
+  text-transform: none !important;
 }
