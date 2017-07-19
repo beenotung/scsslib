@@ -16,20 +16,14 @@
     "url": "git+https://github.com/beenotung/scsslib.git"
   },
   "devDependencies": {
-    "node-sass": "^3.8.0",
-    "shx": "^0.1.4"
+    "node-sass": "^4.5.3",
+    "shx": "^0.2.2"
   },
   "dependencies": {},
   "scripts": {
-    "--------------------------------install": "",
-    "--------------------------------dep": "",
-    "--------------------------------dep-hook": "",
-    "--------------------------------main": "",
     "clean": "shx mkdir -p dist && rm -rf dist/*",
     "build": "node-sass --include-path src src/common.scss dist/common.css",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "--------------------------------main-hook": "",
-    "prebuild": "npm run clean",
-    "--------------------------------": ""
+    "test": "npm run build",
+    "prebuild": "npm run clean"
   }
 }
